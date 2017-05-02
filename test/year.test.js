@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import Year from "../source/year";
+import LeapYearsFrom1804To2400 from "./leapYearsFrom1804To2400";
 
 describe("Year", () => {
     it("shall have ability to check if a year is a leap year", () => {
@@ -19,4 +20,12 @@ describe("Year", () => {
 
         expect(year.isLeapYear()).to.be.false;
     });
-})
+
+    it("shall return true for isLeapYear() for all leap years between 1804 to 2400", () => {
+        LeapYearsFrom1804To2400.map(yyyy => {
+            let year = new Year(yyyy);
+
+            expect(year.isLeapYear()).to.be.true;
+        });
+    });
+});
