@@ -8,7 +8,7 @@
     "test-auto": "gulp test-auto",
     "build": "babel source --presets babel-preset-es2015 --out-dir library",
     "prepublish": "npm run build",
-    "start": "babel-node source/app.js --presets es2015"
+    "start": "babel-node source/app.js --presets es2015 --max_old_space_size=100000"
   },
   "repository": {
     "type": "git",
