@@ -1,7 +1,7 @@
 {
-  "name": "node-es6-tdd",
-  "version": "1.0.2",
-  "description": "node es6 tdd",
+  "name": "leap-years-kata",
+  "version": "0.0.0",
+  "description": "leap years kata",
   "main": "./library/app.js",
   "scripts": {
     "test": "gulp test",
