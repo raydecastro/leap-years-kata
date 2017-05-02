@@ -7,7 +7,8 @@
     "test": "gulp test",
     "test-auto": "gulp test-auto",
     "build": "babel source --presets babel-preset-es2015 --out-dir library",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "start": "babel-node source/app.js --presets es2015"
   },
   "repository": {
     "type": "git",
