@@ -4,7 +4,8 @@ class Year {
     }
 
     isLeapYear() {
-        return (this.isDivisibleBy4() && !this.isDivisibleBy100() || this.isDivisibleBy400());
+        return ((this.isDivisibleBy4() && !this.isDivisibleBy100()) 
+            || this.isDivisibleBy400());
     }
 
     isDivisibleBy4() {
